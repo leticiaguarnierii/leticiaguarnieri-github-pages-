@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index:1;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background: url('/image/imagemm.jpg/api_with_docker-2.png');
+    
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
